@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html language="pt-br">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Menu Fixo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sua Marca</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0);
+    })
+    </script>
+</body>
+</html>
